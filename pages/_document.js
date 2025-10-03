@@ -63,6 +63,22 @@ class MyDocument extends Document {
 
           {/* 预先设置深色模式，避免闪烁 */}
           <script dangerouslySetInnerHTML={{ __html: darkModeScript }} />
+
+          {/* Google Analytics */}
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=G-H9MFQB62EJ'
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-H9MFQB62EJ');
+              `
+            }}
+          />
         </Head>
 
         <body>
