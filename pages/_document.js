@@ -66,10 +66,6 @@ class MyDocument extends Document {
 
           {/* Google Analytics */}
           <script
-            async
-            src='https://www.googletagmanager.com/gtag/js?id=G-H9MFQB62EJ'
-          />
-          <script
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
@@ -78,6 +74,10 @@ class MyDocument extends Document {
                 gtag('config', 'G-H9MFQB62EJ');
               `
             }}
+          />
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=G-H9MFQB62EJ'
           />
         </Head>
 
